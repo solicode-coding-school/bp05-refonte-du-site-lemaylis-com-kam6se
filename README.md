@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/3E5d9NAd)
 # 🌿 Refonte du site web de la maison d'hôtes *Le Maylis*
 
 Bienvenue dans ce projet de refonte du site web pour **Le Maylis** 🌸, une charmante maison d'hôtes à moderniser ! Le site actuel est fonctionnel mais manque de charme et de modernité. Nous allons donc imaginer et créer une toute nouvelle interface attrayante, qui reflète la beauté et le confort du lieu. 🌞✨
