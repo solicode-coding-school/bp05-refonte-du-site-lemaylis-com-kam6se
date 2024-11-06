@@ -1,0 +1,329 @@
+body {
+    background-color: #3a7658;
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+}
+
+.logo-container {
+    text-align: center;
+    padding: 20px 0;
+    
+}
+
+.logo {
+    align-items: center;
+    width: 200px;
+    height: auto;
+}
+header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#myVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+
+    
+}
+
+.welcome-text {
+    text-align: center;
+    color: #FFB4C9;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 25px;
+    margin: 20px;
+    padding: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.text {
+    display: flex;
+    font-size: 40px;
+    color: #f1e4e4;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container {
+    color: #ffffff;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    text-align: justify;
+}
+
+.description {
+    display: flex;
+    color: #fbf3f3;
+    text-align: center;
+    line-height: 1.6; /* Améliore la lisibilité */
+    margin-bottom: 20px;
+}
+
+
+
+.hotel-name {
+    font-size: 40px;
+    text-align: center;
+    color: #FFB4C9;
+    font-size: 128px;
+    font-family: 'serif';
+    margin: 20px 0;
+}
+
+.subtitle {
+    text-align: center;
+    color: #FFB4C9;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.nav-button {
+    padding: 10px 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: rgba(237, 138, 186, 0.77);
+}
+main {
+    padding: 10px;
+    margin-top: 50px;
+    height: auto;
+    text-align: center;
+}
+
+
+.room-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    background-color: #FFEFDA;
+    border-radius: 10px 10px  10px 10px;
+    margin-top: 10%
+    
+
+    
+}
+
+.text {
+    
+    font-size: 10px;
+    width: auto;
+    padding: 20px;
+    text-align: left;
+}
+.allura-regular, .text h2 {
+    font-family: "Allura", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: x-large;
+  }
+  
+
+.text h2 {
+    font-size: 50px;
+    color: #91713C;
+    margin-bottom: 20px;
+}
+
+.text p {
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+    color: #555;
+
+}
+
+.image {
+   
+    width:  50% ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+
+} 
+
+.image img {
+    
+    
+    width:80%;
+    height: auto;
+    border-radius: 900px  900px 900px 00px;
+
+}
+
+@media (max-width: 500px) {
+    .room-container {
+        flex-direction: column;
+    }
+
+    .text, .image {
+        font-size: 2rem;
+        width: 100%;
+
+        
+    }
+}
+.image-container {
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+  }
+  
+  .image-caption {
+    
+    flex-direction: column;
+    background-color: #5ce7f6;
+    padding: 0px;
+    margin-top: 0px;
+  }
+  
+  .image-caption p {
+    font-style: italic;
+  }
+  .feature-video {
+    background-color: #EFA593;
+    padding:0px;
+    text-align: center;
+  }
+  
+  .feature-video video {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    border-radius: 1500px 1500px 1500px 1500px;
+    
+  }
+  @media (max-width: 600px) {
+    .feature-video video {
+      width: 90%;
+      height: auto;
+    }
+  }
+  /* CSS pour le footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 2rem 0;
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.social-icons {
+    margin-bottom: 1rem;
+}
+
+.social-link {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    color: #333;
+    text-align: center;
+    line-height: 40px;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.social-link i {
+    font-size: 1.2rem;
+}
+
+/* Couleurs spécifiques pour chaque réseau social au survol */
+.social-link:hover .fa-facebook-f {
+    color: #3b5998;
+}
+
+.social-link:hover .fa-instagram {
+    color: #e1306c;
+}
+
+.social-link:hover .fa-twitter {
+    color: #1da1f2;
+}
+
+.social-link:hover .fa-linkedin-in {
+    color: #0077b5;
+}
+
+.footer-text {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Pour s'assurer que le footer reste en bas */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Media Queries pour la responsivité */
+@media (max-width: 768px) {
+    .social-link {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        margin: 0 5px;
+    }
+
+    .social-link i {
+        font-size: 1rem;
+    }
+}

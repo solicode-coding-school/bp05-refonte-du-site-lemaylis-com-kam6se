@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="video-background">
+            <video autoplay muted loop id="myVideo">
+                <source src="maylisvod.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="logo-container">
+            <img src="le maylis (1).png" alt="Le Maylis Logo" class="logo">
+        </div>
+        <div class="welcome-text">Welcome to</div>
+        <h1 class="hotel-name">Le Maylis</h1>
+        <div class="subtitle">Maison D'hote</div>
+        <nav class="nav-container">
+            <a href="index.html" class="nav-button">Home</a>
+            <a href="index2.html" class="nav-button">Rooms</a>
+            <a href="index3.html" class="nav-button">Resvation</a>
+            <a href="index4.html" class="nav-button">Contact</a>
+            <a href="index5.html" class="nav-button">Book Now</a>
+        </nav>
+   
+    </header>  
+    <div class="contact-container">
+        <h1>Contactez-nous</h1>
+        
+        <div class="contact-info">
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Douar Bougdour
+                    Commune Rurale Hajr N'Hal
+                    Tanger - Maroc</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <p>+212 6 66 54 90 33</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <p>contact-maylis@hotel.com</p>
+            </div>
+        </div>
+    
+        <form id="contactForm" class="contact-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="firstName">Prénom *</label>
+                    <input type="text" id="firstName" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Nom *</label>
+                    <input type="text" id="lastName" required>
+                    <span class="error-message"></span>
+                </div>
+            </div>
+    
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Téléphone</label>
+                    <input type="tel" id="phone">
+                    <span class="error-message"></span>
+                </div>
+            </div>
+    
+            <div class="form-group">
+                <label for="subject">Sujet *</label>
+                <select id="subject" required>
+                    <option value="">Sélectionnez un sujet</option>
+                    <option value="reservation">Réservation</option>
+                    <option value="information">Demande d'information</option>
+                    <option value="reclamation">Réclamation</option>
+                    <option value="autre">Autre</option>
+                </select>
+                <span class="error-message"></span>
+            </div>
+    
+            <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" rows="6" required></textarea>
+                <span class="error-message"></span>
+            </div>
+    
+            <button type="submit" class="submit-btn">
+                <span class="btn-text">Envoyer</span>
+                <span class="spinner"></span>
+            </button>
+        </form>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="#" class="social-link">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+            <div class="footer-text">
+                <p>&copy; 2024 LE MAYLIS. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

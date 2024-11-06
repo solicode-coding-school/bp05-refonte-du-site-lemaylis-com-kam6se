@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section 2</title>
+    <link rel="stylesheet" href="style2.css" >
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/fr.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Allura&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+    </style>
+</head>
+<body>
+    
+                <header>
+                    <div class="video-background">
+                        <video autoplay muted loop id="myVideo">
+                            <source src="maylisvod.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="logo-container">
+                        <img src="le maylis (1).png" alt="Le Maylis Logo" class="logo">
+                    </div>
+                    <div class="welcome-text">Welcome to</div>
+                    <h1 class="hotel-name">Le Maylis</h1>
+                    <div class="subtitle">Maison D'hote</div>
+                    <nav class="nav-container">
+                        <a href="index.html" class="nav-button">Home</a>
+                        <a href="index2.html" class="nav-button">Rooms</a>
+                        <a href="index3.html" class="nav-button">Resvation</a>
+                        <a href="index4.html" class="nav-button">Contact</a>
+                        <a href="index5.html" class="nav-button">Book Now</a>
+                    </nav>
+            
+                </header>  
+                <div class="reservation-container">
+                    <h1>Réservation de Chambres</h1>
+                    
+                    <div class="pricing-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Type de chambre</th>
+                                    <th>1ère nuit</th>
+                                    <th>À partir de la 2ème nuit</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Single</td>
+                                    <td>500 MAD</td>
+                                    <td>250 MAD</td>
+                                </tr>
+                                <tr>
+                                    <td>Double</td>
+                                    <td>800 MAD</td>
+                                    <td>400 MAD</td>
+                                </tr>
+                                <tr>
+                                    <td>Enfant (6-12 ans)</td>
+                                    <td colspan="2">150 MAD</td>
+                                </tr>
+                                <tr>
+                                    <td>Suite (jusqu'à 4 personnes)</td>
+                                    <td colspan="2">1200 MAD</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="booking-container">
+                    <form id="bookingForm" class="booking-form">
+                        <div class="form-group">
+                            <label for="roomType">Type de chambre :</label>
+                            <select id="roomType" required>
+                                <option value="">Sélectionnez une chambre</option>
+                                <option value="single">Single</option>
+                                <option value="double">Double</option>
+                                <option value="suite">Suite (jusqu'à 4 personnes)</option>
+                            </select>
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="checkIn">Date d'arrivée :</label>
+                            <input type="date" id="checkIn" required>
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="checkOut">Date de départ :</label>
+                            <input type="date" id="checkOut" required>
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="adults">Nombre d'adultes :</label>
+                            <input type="number" id="adults" min="1" max="10" value="1" required>
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="children">Nombre d'enfants (6-12 ans) :</label>
+                            <input type="number" id="children" min="0" max="10" value="0" required>
+                        </div>
+                
+                        <div class="price-summary" id="priceSummary">
+                            <h3>Résumé du prix</h3>
+                            <div class="price-details"></div>
+                            <div class="total-price">Total: <span id="totalPrice">0 MAD</span></div>
+                        </div>
+                
+                        <button type="submit" class="submit-btn">Réserver maintenant</button>
+                    </form>
+                    <!-- Ajouter ce HTML à la fin de votre body -->
+            <div class="modal" id="confirmationModal">
+                <div class="modal-content">
+                    <h2>Confirmation de réservation</h2>
+                    <p>Voulez-vous confirmer votre réservation ?</p>
+                    <div class="modal-buttons">
+                        <button class="btn-confirm">Confirmer</button>
+                        <button class="btn-cancel">Annuler</button>
+                    </div>
+                </div>
+            </div>
+          
+            
+       
+    <script  src="script.js"></script>
+
+</body>
+ </html>
